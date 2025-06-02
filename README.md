@@ -2,6 +2,9 @@
 
 # React Task Manager App 🚀
 
+![image](https://github.com/user-attachments/assets/b2366ffc-a01c-4170-a742-d42cec91fe7e)
+
+
 Welcome to the React Task Manager App! This application is designed to help you manage your tasks efficiently using React and Django. It provides a user-friendly interface to create, update, and delete tasks, making it easier to keep track of your to-do list. ✅
 
 ## Features 🌟
@@ -58,6 +61,8 @@ To get a local copy of the project up and running, follow these steps:
 ##
 
 ## برنامه مدیریت وظایف React و Django 🚀
+![image](https://github.com/user-attachments/assets/e40dc72c-5a8e-477a-bf04-0c0301bc29fd)
+
 
 به برنامه مدیریت وظایف React و Django خوش آمدید! این برنامه برای کمک به شما در مدیریت کارهای خود به طور مؤثر با استفاده از React و Django طراحی شده است. این برنامه یک رابط کاربری کاربرپسند برای ایجاد، به‌روزرسانی و حذف وظایف فراهم می‌کند و مدیریت لیست کارهای شما را آسان‌تر می‌کند. ✅
 
