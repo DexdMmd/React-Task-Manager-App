@@ -1,0 +1,6 @@
+{
+  "name": "React Task Manager",
+  "description": "A modern task management application built with React, TypeScript, and Tailwind CSS, inspired by a user's existing project. It features task creation, listing, status tracking, dark mode, and a responsive UI.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

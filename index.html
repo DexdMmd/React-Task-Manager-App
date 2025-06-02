@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Task Manager</title>
+    <style>
+      /* Define the Tanha font */
+      @font-face {
+        font-family: 'Tanha';
+        src: url('/fonts/Tanha-Regular.woff2') format('woff2'), /* Modern Browsers */
+             url('/fonts/Tanha-Regular.woff') format('woff');   /* Legacy Browsers */
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap; /* Improves perceived performance */
+      }
+
+      /* Optional: If you have a bold version of Tanha */
+      /*
+      @font-face {
+        font-family: 'Tanha';
+        src: url('/fonts/Tanha-Bold.woff2') format('woff2'),
+             url('/fonts/Tanha-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+      */
+
+      /* Apply Tanha font when the language is Farsi */
+      html[lang="fa"] body {
+        font-family: 'Tanha', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+
+      /* You might want to ensure specific elements like inputs and buttons also inherit or use Tanha explicitly for Farsi */
+      html[lang="fa"] input,
+      html[lang="fa"] textarea,
+      html[lang="fa"] select,
+      html[lang="fa"] button {
+        font-family: 'Tanha', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#10B981', // Emerald 500
+              'primary-dark': '#059669', // Emerald 600
+              'secondary': '#374151', // Gray 700
+              'secondary-dark': '#1F2937', // Gray 800
+              'accent': '#8B5CF6', // Violet 500
+              'light-bg': '#F3F4F6', // Gray 100
+              'dark-bg': '#111827', // Gray 900
+              'dark-card': 'rgba(31, 41, 55, 0.7)', // Gray-800 with opacity for glassmorphism
+              'dark-input': '#374151', // Gray-700
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeOut: {
+                '0%': { opacity: '1', transform: 'translateY(0)' },
+                '100%': { opacity: '0', transform: 'translateY(-10px)' },
+              }
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.3s ease-out',
+              fadeOut: 'fadeOut 0.3s ease-in forwards',
+            }
+          },
+        },
+      }
+    </script>
+  <!-- Importmap removed - Vite handles module resolution -->
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-i18next": "https://esm.sh/react-i18next@^15.5.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "i18next": "https://esm.sh/i18next@^25.2.1",
+    "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@^8.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script> 
+    <!-- Vite will process this entry point. If your index.tsx is in a 'src' folder, it would be '/src/index.tsx' -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
